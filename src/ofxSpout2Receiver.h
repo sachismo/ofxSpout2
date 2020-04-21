@@ -10,8 +10,29 @@ namespace ofxSpout2 {
 
 		void setup();
 
+		bool isSetup();
+
+		void release();
+
 		// show the panel for possible senders and select one
 		void showSenders();
+
+		int getSenderCount();
+
+		void getSenderInfo(const char *name, unsigned int width, unsigned int height);
+
+		unsigned int getSenderWidth(string serverName);
+
+		unsigned int getSenderHeight(string serverName);
+
+
+		//bool getSenderName(int index, char* sendername, int MaxNameSize);
+
+		string getSenderName(int index, char* name);
+
+		void setActiveSender(string senderName);
+
+
 
 		void updateTexture();
 
